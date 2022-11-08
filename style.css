@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-page: #22212C;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+
+    --fc-primary: #837E9F;
+    --fc-secundary: #000;
+
+    font-size: 62.5%;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-page);
+    color: var(--fc-primary);
+    display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    
+    gap: 6rem;
+    padding: 4rem 4rem 0 4rem;
+}
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 3rem;
+}
+.profileInfo section {
+    width: 34.8rem;
+    background-color: var(--bg-cards);
+
+    border-radius: 2rem;
+}
+.profile {
+    text-align: center;
+}
+.profile img {
+    height: 12.8rem;
+    border: solid 2px #00FF00;
+    border-radius: 50%;
+
+    margin: 3.2rem 11rem 0;
+}
+.profile h1 {
+    margin-top: 3rem;
+
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 3rem;
+}
+.profile p{
+    margin: 1rem 0 3rem 0;
+    font-weight: 300;
+    line-height: 1.6rem;
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.links {
+    padding: 3rem 0 3rem 4rem;
+}
+
+.links ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.links li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+.postTech,
+.experience,
+.education {
+    padding: 3rem 2rem;
+}
+
+.postTech h2 {
+    margin-bottom: 2rem;
+}
+
+.wrapper-tech {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-left: 1rem;
+    gap: 1.5rem;
+    column-gap: 2rem;
+}
+
+.tech {    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 8.6rem;
+    height: 2.4rem;
+
+    background-color: var(--bg-techs);
+
+    color: var(--fc-secundary);
+
+    border-radius: 3rem;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.experience ul,
+.education ul {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+    gap: 2rem;
+}
+
+.experience li span, .education li span{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.experience li p, .education li p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.experience li p + p, .education li p + p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+
+.wrapper-projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    max-width: 95.2rem;
+    gap: 3rem;
+}
+
+
+.my-projects,
+ .recent-posts {
+    display: flex;
+
+    background-color: var(--bg-cards);
+
+    padding: 3rem;
+    width: 95.2rem;
+
+    border-radius: 2rem;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.github-info{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.my-projects a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--fc-primary);
+}
+.project {
+    display: flex;
+    flex-direction: column;
+
+    background: var(--bg-cards);
+
+    width: 46rem;
+    padding: 3rem;
+    border-radius: 2rem;
+
+}
+
+.project > span {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    
+    line-height: 2rem;
+
+    gap: 1.6rem;
+}
+
+.project p {
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.repository-info {
+    display: flex;
+
+    justify-content: space-between;
+}
+.star-info {
+    display: flex;
+    flex-direction: row;
+
+    gap: 1.5rem;
+}
+
+.star-info span{
+    display: flex;
+    gap: 0.8rem;
+
+    align-items: center;
+
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
+.tag-info span { 
+    display: flex;
+
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+
+    gap: 0.8rem;
+}
+
+.most-recent-post {
+    display: flex;
+    gap: 2rem;
+    
+    background-color: var(--bg-cards);
+
+    padding: 3rem 3rem 4rem;
+    width: 95.2rem;
+
+    border-radius: 2rem;
+}
+.most-recent-post div img {
+    height: 12.8rem;
+    border-radius: 50%;
+}
+
+.most-recent-post h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+}
+
+.most-recent-post h2 + p {
+    margin-top: 1.5rem;
+
+    font-size: 1.4rem;
+}
+
+.most-recent-post p + p {
+    margin-top: 2.8rem;
+
+    font-size: 1.6rem;
+}
+
+.most-recent-post ul {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    list-style: none;
+
+    font-size: 1.4rem;
+}
