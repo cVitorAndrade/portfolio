@@ -29,6 +29,10 @@ main {
     gap: 6rem;
     padding: 4rem 4rem 0 4rem;
 }
+
+.box-shadow {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .profileInfo {
     display: flex;
     flex-direction: column;
